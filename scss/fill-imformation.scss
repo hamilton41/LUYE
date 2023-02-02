@@ -1,0 +1,375 @@
+.fill-imformation{
+    padding-top: 6rem;
+    padding-bottom: 4rem;
+    background-color: $theme-color;
+    position: relative;
+    .row{
+        width: 100%;
+    }
+    h2{
+        font-size: $s-large;
+        font-weight: 600;
+        color: $white;
+        margin: 5rem 0 4rem;
+        padding-left: 8rem;
+    }
+    h3{
+        font-size: $mid;
+        font-weight: 600;
+        color: $font-green;
+    }
+    .price{
+        line-height: 5rem;
+        color: $font-green;
+        font-weight: 800;
+        font-size: $xx-mid;
+        &-num{
+            font-size: $large;
+        }
+    }
+    .fill-imformation-step{
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+        &-item{
+            img{
+                width: 40px;
+            }
+            p{
+                margin-left: 7px;
+            }
+        }
+        .arrow{
+            img{
+                width: 27px;
+                margin-left: 5px;
+                margin-right: 2rem;
+            }
+        }
+    }
+    .order-imformation{
+        padding: 8rem;
+        padding-bottom: 0;
+        input{
+            margin-bottom: 0.7rem;
+            background-color: $input-bg;
+            color: $white;
+            border: none;
+            padding: 0.7rem 1.4rem;
+            border-radius: 4px;
+            width: 100%;
+            &::placeholder{
+                color: $placeholder-color;
+                font-size: $small;
+                font-weight: 500;
+            }
+        }
+        textarea{
+            border-radius:10px;
+            margin: 0.7rem 0 2rem;
+            resize : none;
+            width: 100%;
+            background-color: $input-bg;
+            color: $white;
+            border: none;
+            padding: 0.7rem 1.4rem 0.8rem;
+            width: 100%;
+            &::placeholder{
+                color: $placeholder-color;
+                font-size: $small;
+                font-weight: 500;
+            }
+        }
+        p{
+            margin: 0.8rem 0;
+        }
+        .code{
+            input{
+                margin: 0;
+                &::placeholder{
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .order-price{
+        padding: 8rem;
+        padding-top: 1rem;
+        padding-bottom: 3rem;
+        p{
+            font-weight: 500;
+        }
+        h3{
+            color: $white;
+            padding-left: 0;
+            margin-bottom: 0.5rem;
+        }
+        .subtotal{
+            margin: 1.2rem 0;
+            position: relative;
+            &-price{
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 98.8%;
+                height: 3px;
+                bottom: -1.1rem;
+                left: 1.2%;
+                background-color: $item-border;
+            }
+        }
+        .total{
+            margin: 1.2rem 0;
+            position: relative;
+            p{
+                color: $font-green;
+            }
+            &-price{
+                position: absolute;
+                top: -2rem;
+                right: 0;
+            }
+        }
+    }
+    .arrow-down{
+        margin-bottom: 5rem;
+        img{
+            width: 45px;
+        }
+    }
+    .pay-method{
+        padding: 0.4rem 8rem;
+        margin-bottom: 3rem;
+        h3.choice-title{
+            color: $white;
+            padding-left: 0;
+            margin-bottom: 3rem;
+        }
+        &-choice{
+            border: 4px solid #036755;
+            border-radius: 7px;
+            padding: 0 1rem 1rem;
+            h3{
+                margin: 1rem 1rem 0 0;
+            }
+        }
+        &-option{
+            margin-left: 3rem;
+            padding-left: 1.4rem;
+            position: relative;
+            .row{
+                position: relative;
+                input{
+                    visibility: hidden;
+                }
+                label{
+                    margin: 1.7rem 0;
+                    width: 100%;
+                    position: relative;
+
+                    .card-icon{
+                        position: absolute;
+                        top: 0rem;
+                        bottom: 0;
+                        right: 6rem;
+                        margin: auto;
+                        img{
+                            width: 36px;
+                        }
+                        .disable{
+                            display: block;
+                        }
+                        .active{
+                            display: none;
+                        }
+                    }
+                    p{
+                        position: relative;
+                        &::before{
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: -3.2rem;
+                            margin: auto;
+                            width: 28px;
+                            height: 28px;
+                            border: 3.6px solid $item-border;
+                            border-radius: 50%;
+                            content: '';
+                        }
+                    }
+                }
+                input:checked + label{
+                    .card-icon{
+                        .disable{
+                            display: none;
+                        }
+                        .active{
+                            display: block;
+                        }
+                    }
+                    p{
+                        color: $font-green;
+                        &::after{
+                            position: absolute;
+                            top: 0;
+                            bottom: 0;
+                            left: -44px;
+                            margin: auto;
+                            width: 14px;
+                            height: 14px;
+                            border-radius: 50%;
+                            background-color: $font-green;
+                            content: '';
+                        }
+                    }
+                }
+                
+            }
+            &::after{
+                content: '';
+                position: absolute;
+                width: 105%;
+                top: 54%;
+                left: -5%;
+                right: 0;
+                height: 3px;
+                background-color: $item-border;
+            }
+        }
+    }
+    .announcement{
+        margin: 2.5rem 8rem 4rem;
+        padding: 1rem 0 6rem;
+        border: 4px solid #036755;
+        border-radius: 7px;
+        h3{
+            padding-left: 1.4rem;
+            margin-top: 1rem;
+        }
+        p{
+            padding: 1.4rem;
+        }
+    }
+    .choice-title{
+        font-size: $x-mid;
+        padding-left: 7.9rem;
+        margin-top: 4.5rem;
+    }
+    .choice{
+        padding: 4rem;
+        padding-top: 0.2rem;
+        &-date{
+            position: relative;
+            margin: 2rem 0.4rem;
+            p{
+                color: $font-green;
+            }
+            &-more{
+                position: absolute;
+                top: 0;
+                right: -5rem;
+                img{
+                    width: 25px;
+                    margin-left: 0.3rem;
+                }
+            }
+        }
+        .date{
+            margin-bottom: 3.4rem;
+            &-item{
+                width: 16%;
+                padding: 0.6rem 1rem 0.15rem;
+                border: 2.8px solid $item-border;
+                border-radius: 7px;
+            }
+            .active{
+                background-color: $item-border;
+                .font-green{
+                    color: $white;
+                }
+            }
+            .font-green{
+                color: $font-green;
+            }
+            
+        }
+        &-main{
+            border: 4px solid $item-border;
+            border-radius: 7px;
+            padding-bottom: 0.5rem;
+            h3{
+                margin-left: 1.8rem;
+            }
+            p{
+                margin-left: 1.8rem;
+            }
+            &>h3{
+                margin-top: 1.9rem;
+                margin-bottom: 1.2rem;
+            }
+            .section-active{
+                background-color: $item-border;
+                padding: 1.2rem 0;
+                p{
+                    margin-top: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+            &-section{
+                padding: 1.4rem 0;
+                position: relative;
+                img{
+                    position: absolute;
+                    right: 5rem;
+                    top: 0;
+                    bottom: 0.2rem;
+                    margin: auto;
+                    width: 15px;
+                }
+                &::before{
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    margin: auto;
+                    width: 97%;
+                    bottom: 0.2rem;
+                    height: 3px;
+                    background-color: $item-border;
+                }
+                &:last-child{
+                    &::before{
+                        height: 0;
+                    }
+                }
+            }
+        }
+
+        .main-introduce{
+            .choice-title{
+                padding-left: 0;
+                margin-bottom: 2.5rem;
+            }
+            img{
+                width: 100%;
+                margin-bottom: 1.1rem;
+            }
+            &-1{
+                margin-top: 4.5rem;
+            }
+            p{
+                width: 98%;
+                margin-left: 0.6rem;
+                line-height: 2.3rem;
+            }
+        }
+    }
+
+    
+}
+

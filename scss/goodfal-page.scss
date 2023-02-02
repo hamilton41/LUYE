@@ -1,0 +1,22 @@
+.goodfal-page{
+    padding-top: 11rem;
+    padding-bottom: 6rem;
+    background-color: $theme-color;
+    position: relative;
+    .goodfal{
+        margin-bottom: 8rem;
+        h1.text-center{
+            margin-bottom: 5rem;
+        }
+        &>.row{
+            padding: 0;
+        }
+        
+    }
+    .facilities{
+        .container{
+            margin-top: 5rem;
+            margin-bottom: 0;
+        }
+    }
+}

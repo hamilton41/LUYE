@@ -1,0 +1,43 @@
+.hightlights{
+    padding-top: 11rem;
+    padding-bottom: 10rem;
+    background-color: $theme-color;
+    position: relative;
+    h1.text-center{
+        position: relative;
+        width: fit-content;
+        margin:2rem auto;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 150%;
+            left: -25%;
+            bottom: -2rem;
+            height: 4px;
+            background-color: $item-border;
+        }
+    }
+    .logo_2{
+        top: 7rem;
+    }
+    .watermark{
+        left: 1rem;
+        right: 0;
+        top: 10.2rem;
+        margin: auto;
+    }
+    .container{
+        margin-top: 8rem;
+        margin-bottom: 2rem;
+    }
+    &-item{
+        margin-bottom: 6rem;
+        img{
+            width: 100%;
+        }
+        p{
+            width: 96%;
+            margin-left: 2%;
+        }
+    }
+}

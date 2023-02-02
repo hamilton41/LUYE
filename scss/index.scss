@@ -1,0 +1,303 @@
+.main_bg{
+    width: 100%;
+    position: relative;
+    background-color: $theme-color;
+    .index_bg{
+        width: 100%;
+    }
+
+    .arrow_left{
+        width: 70px;
+        position: absolute;
+        left: 30px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .arrow_right{
+        width: 70px;
+        top: 0;
+        bottom: 0;
+        right: 30px;
+        margin: auto;
+        position: absolute;
+    }
+    .sroll_down{
+        width: 70px;
+        left: 0;
+        right: 0;
+        bottom: 25px;
+        margin: auto;
+        position: absolute;
+    }
+
+}
+.experience{
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    padding-right: 2rem;
+    background-color: $theme-color;
+    .beginner{
+        margin: 2rem;
+        padding: 1.4rem 0.7rem;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        width: 100%;
+        .img-dec{
+            position: absolute;
+            top: -2rem;
+            left: 0.6rem;
+            img{
+                width: 80px;
+            }
+            &-txt{
+                position: absolute;
+                left: 0;
+                right: 0;
+                top: 0;
+                bottom: 0;
+                margin: auto;
+                display: block;
+                width: fit-content;
+                height: fit-content;
+            }
+        }
+        h2{
+            position: absolute;
+            left: 0;
+            right: 10px;
+            bottom: 4rem;
+            width: fit-content;
+            margin: auto;
+            color: $white;
+            font-size: $large;
+            text-shadow: rgba(0, 0, 0, 0.347) 0 3px 5px;
+            transform: rotate(-13deg);
+        }
+    }
+    .col-7{
+        margin-left: 4rem;
+    }
+    position: relative;
+    .logo_2{
+        bottom: 10px;
+    }
+    h1{
+        padding: 2rem 0;
+    }
+
+    .btn{
+        position: relative;
+        left: -14px;
+    }
+}
+
+.course{
+    background-image: url("../image/course-bg.png");
+    background-size:cover;
+    background-position: center top;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    position: relative;
+    &>p{
+        margin: 2rem 0;
+        text-shadow: $black 0 3px 5px;
+    }
+
+    .watermark{
+        top: -1rem;
+    }
+
+    .item{
+        img{
+            width: 100px;
+        }
+    }
+    &-item{
+        border-radius: 4px;
+        background-color: $white;
+        height: 29rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 0.8rem;
+        p{
+            color: $black;
+            font-weight: 400;
+            margin: 0.4rem 0;
+        }
+        img{
+            height: 100px;
+        }
+        h2{
+            font-size: $s-large;
+            font-weight: 500;
+            letter-spacing: 3px;
+            margin: 2rem 0;
+        }
+    }
+    &>.row{
+        width: 100%;
+    }
+    a{
+        h2{
+            color: $black;
+        }
+    }
+}
+
+.care{
+    padding-top: 11rem;
+    padding-bottom: 10rem;
+    background-color: $theme-color;
+    position: relative;
+    .logo_2{
+        top: 7rem;
+    }
+    .watermark{
+        left: 1rem;
+        right: 0;
+        top: 10.2rem;
+        margin: auto;
+    }
+    h1{
+        margin: 2rem 0;
+    }
+    &>p{
+        max-width: 750px;
+        margin: auto;
+    }
+    .step{
+        padding: 100px 100px 50px;
+        img{
+            width: 130px;
+        }
+    }
+}
+
+.event{
+    position: relative;
+    background-color: $theme-color;
+    padding: 5rem 15px 15rem;
+    .logo_2{
+        top: 0;
+    }
+    &>p{
+        max-width: 650px;
+        margin: 1rem auto 2rem;
+    }
+    .watermark{
+        top: 2.5rem;
+    }
+    &-item{
+        margin-bottom: 6rem;
+        padding: 0 2px;
+        position: relative;
+        img{
+            width: 100%;
+        }
+        span{
+            font-size: $mid;
+            color: $white;
+            margin: 1rem 0 1rem 0.7rem;
+        }
+        h3{
+            font-size: $mid;
+            color: $white;
+            margin: 1.2rem 0 1rem 0.7rem;
+        }
+        
+    }
+}
+
+.goodfal{
+    position: relative;
+    background-color: $theme-color;
+    padding-top: 5rem;
+    padding-bottom: 13rem;
+
+    h1.text-center{
+        position: relative;
+        width: fit-content;
+        margin: auto;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 150%;
+            left: -25%;
+            bottom: -2rem;
+            height: 4px;
+            background-color: $item-border;
+        }
+    }
+    .watermark{
+        top: 2.5rem;
+    }
+    .logo_2{
+        top: 0;
+    }
+
+    &>.row{
+        padding: 4rem 0rem;
+        width: 100%;
+        margin: auto;
+    }
+    .item-border{
+        margin: 2rem 1rem;
+        .goodfal-image{
+            position: relative;
+            padding: 0;
+            img{
+                width: 100%;
+            }
+            h2{
+                position: absolute;
+                left: 0;
+                right: 10px;
+                bottom: 4rem;
+                width: fit-content;
+                margin: auto;
+                color: $white;
+                font-size: $large;
+                text-shadow: rgba(0, 0, 0, 0.347) 0 3px 5px;
+                transform: rotate(-13deg);
+            }
+            .img-dec{
+                left: -0.5rem;
+            }
+        }
+        .goodfal-txt{
+            padding-left: 16%;
+            h2{
+                font-size: $large;
+                color: $white;
+                font-weight: 500;
+                line-height: 8rem;
+                letter-spacing: 1px;
+            }
+            span{
+                display: block;
+                font-size: $mid;
+                color: $white;
+                font-weight: 600;
+                margin: 0.7rem 0;
+            }
+            .color-green{
+                color: $font-green;
+            }
+    
+        }
+
+    }
+    
+
+}
+
+.map{
+    img{
+        width: 100%;
+    }
+}

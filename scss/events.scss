@@ -1,0 +1,115 @@
+.events-page{
+    padding-top: 11rem;
+    padding-bottom: 10rem;
+    background-color: $theme-color;
+    position: relative;
+    h1.text-center{
+        position: relative;
+        width: fit-content;
+        margin:2rem auto;
+        &::before{
+            content: '';
+            position: absolute;
+            width: 150%;
+            left: -25%;
+            bottom: -2rem;
+            height: 4px;
+            background-color: $item-border;
+        }
+    }
+    h2{
+        font-size: $s-large;
+        font-weight: 600;
+        color: $white;
+        margin: 5rem 0;
+    }
+    .logo_2{
+        top: 7rem;
+    }
+    .watermark{
+        left: 1rem;
+        right: 0;
+        top: 10.2rem;
+        margin: auto;
+    }
+    .page-location{
+        text-align: end;
+        margin-top: 6rem;
+        margin-right: 3rem;
+        p{
+            display: inline-block;
+            color: rgba(255, 255, 255, 0.82);
+        }
+        .active{
+            color: $white;
+        }
+        i{
+            color: $font-green;
+            font-size: $mid;
+        }
+    }
+    &-bg{
+        width: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    &-img-section{
+        width: 100%;
+        padding: 0.4rem 0.4rem;
+        img{
+            width: 100%;
+        }
+        .arrow-right{
+            img{
+                width:23%;
+                position: relative;
+                bottom: 10px;
+            }
+        }
+    }
+    .main-txt{
+        width: 80%;
+        margin: 4rem auto;
+        padding-bottom: 0.4rem;
+        p{
+            margin: 3rem 0;
+        }
+    }
+
+    .you-might-like{
+        margin-top: 7rem;
+        &>h3{
+            color: $white;
+            font-size: $x-mid;
+            font-weight: 600;
+            display: inline-block;
+            margin: 0.7rem 1rem;
+        }
+        .row{
+            width: 100%;
+            padding: 1rem;
+            margin: 0;
+        }
+        &-item{
+            padding: 0 3px;
+            img{
+                width: 100%;
+            }
+            span{
+                color: $white;
+                font-size: $mid;
+                font-weight: 500;
+                margin-bottom: 0.7rem;
+                display: inline-block;
+                padding-left: 10px;
+            }
+            h3{
+                color: $white;
+                font-size: $mid;
+                font-weight: 700;
+                padding-left: 10px;
+            }
+        }
+    }
+}
